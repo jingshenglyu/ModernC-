@@ -2,7 +2,7 @@
  * @Author: Jingsheng Lyu
  * @Date: 2021-01-19 20:57:03
  * @LastEditors: Jingsheng Lyu
- * @LastEditTime: 2021-01-19 22:02:15
+ * @LastEditTime: 2021-01-20 22:37:00
  * @FilePath: /ModernCpp/Code_Repo/L1_Build_and_Tools/README.md
  * @Github: https://github.com/jingshenglyu
  * @Web: https://jingshenglyu.github.io/
@@ -32,16 +32,34 @@
     * All files -build-> the executable file
 
     1. Build Commands
-        ```
         ```diff
-        ! c++ -std=c++17 -c xxx.cpp -o xxx.o
-        ! ar rcs xxx.a xxx.o <other_modules>
-        + c++ -std=c++17 main.cpp @@-L . -ltools
+        ! c++ -std=c++17 -c xxx.cpp -o xxx.o 
+        ! ar rcs xxx.a xxx.o <other_modules> 
+        - c++ -std=c++17 main.cpp -L . -ltools
         ```
 
-   1. For a script
+    2. For a script
         ```diff
         ! add_library(xxx xxx.cpp)@@
-        + add_executable(main main.cpp)+
-        @@ target_link_librarie(main xxx)
+        - add_executable(main main.cpp)+
+         target_link_librarie(main xxx)
         ``` 
+## Build
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+## Refresh: everything is broken.
+```
+cd project/build
+make clean [remove generated binaries]
+rm -rf * [make sure you are in build/ folder]
+```
+
+Short way: If you are in project/
+```
+rm -rf build/
+```

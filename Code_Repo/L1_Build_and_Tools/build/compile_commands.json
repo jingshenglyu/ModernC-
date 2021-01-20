@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/jingsheng/ModernCpp/Code_Repo/L1_Build_and_Tools/build",
+  "command": "/usr/bin/c++      -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c /home/jingsheng/ModernCpp/Code_Repo/L1_Build_and_Tools/main.cpp",
+  "file": "/home/jingsheng/ModernCpp/Code_Repo/L1_Build_and_Tools/main.cpp"
+},
+{
+  "directory": "/home/jingsheng/ModernCpp/Code_Repo/L1_Build_and_Tools/build",
+  "command": "/usr/bin/c++      -std=gnu++17 -o CMakeFiles/tools.dir/tools.cpp.o -c /home/jingsheng/ModernCpp/Code_Repo/L1_Build_and_Tools/tools.cpp",
+  "file": "/home/jingsheng/ModernCpp/Code_Repo/L1_Build_and_Tools/tools.cpp"
+}
+]
