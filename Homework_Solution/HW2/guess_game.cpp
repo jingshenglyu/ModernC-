@@ -2,7 +2,7 @@
  * @Author: Jingsheng Lyu
  * @Date: 2021-01-22 20:49:46
  * @LastEditors: Jingsheng Lyu
- * @LastEditTime: 2021-01-23 11:34:04
+ * @LastEditTime: 2021-01-23 11:36:28
  * @FilePath: /ModernCpp/Homework_Solution/HW2/guess_game.cpp
  * @Github: https://github.com/jingshenglyu
  * @Web: https://jingshenglyu.github.io/
@@ -32,7 +32,7 @@ int main(int argc, char const *argv[]) {
     }
   };
   if (std::cin.fail()) {
-    std::cout << "Error encountered, exiting...\n";
+    std::cerr << "Error encountered, exiting...\n";
 
     return 1;
   }
