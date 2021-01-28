@@ -8,8 +8,6 @@
  * @Web: https://jingshenglyu.github.io/
  * @E-Mail: jingshenglyu@gmail.com
 -->
-
-
 # Modern C++
 The course is the modern C++ course from Prof. Cyrill Stachniss.
 
